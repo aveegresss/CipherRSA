@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Шифр RSA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./fonts/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./fonts/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+<div class="cipherWindow">
+    <h1>Шифр RSA:</h1>
+    <textarea class="text" placeholder="Введите текст.."></textarea>
+    <div>
+        <p>Для публичного ключа используются ( e, n ) :</p>
+    </div>
+    <textarea class="keyPublic" readonly></textarea>
+    <div>
+        <p>Для приватного ключа используются ( d, n ) :</p>
+    </div>
+    <textarea class="keyPrivate" readonly></textarea>
+    <div class="btn-crypt">
+        <button class="encrypt-button">шифровать</button>
+        <button class="decrypt-button">дешифровать</button>
+    </div>
+    <h2>Результат:</h2>
+    <textarea class="result-text" readonly></textarea>
+    <button class="clear-button">очистить</button>
+</div>
+
+<script src="index.js" type="module"></script>
+<script src="biginteger.js" type="module"></script>
+
+</body>
+
+</html>
